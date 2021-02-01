@@ -32,6 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'IMCore/Classes/Headers/**/*'
   #s.static_framework = true
+  s.xcconfig = {
+      'ENABLE_BITCODE' => 'NO'
+  }
   s.subspec 'Mars' do |ss|
       ss.vendored_frameworks = 'IMCore/Vendors/*.framework'
       #ss.source_files = 'NetProtocol/*.framework/Headers/**/*.h'

@@ -207,6 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				3479DC477620A5F387E7DA71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yangjun;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = P7RA4XMY8C;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -294,6 +298,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3479DC477620A5F387E7DA71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMCore_Example/Pods-IMCore_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IMCore/IMCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IMCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMCore_Example/Pods-IMCore_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		92065A94FC3F32E4894146CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +497,8 @@
 			baseConfigurationReference = 1FA256F0E3DAECE794F75BD6 /* Pods-IMCore_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7RA4XMY8C;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMCore/IMCore-Prefix.pch";
 				INFOPLIST_FILE = "IMCore/IMCore-Info.plist";
@@ -492,6 +516,8 @@
 			baseConfigurationReference = A30363051806AF5360E062FF /* Pods-IMCore_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7RA4XMY8C;
+				"EXCLUDED_ARCHS[sdk=*]" = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMCore/IMCore-Prefix.pch";
 				INFOPLIST_FILE = "IMCore/IMCore-Info.plist";
