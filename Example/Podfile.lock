@@ -1,0 +1,18 @@
+PODS:
+  - IMCore (0.1.0):
+    - IMCore/Mars (= 0.1.0)
+  - IMCore/Mars (0.1.0)
+
+DEPENDENCIES:
+  - IMCore (from `../`)
+
+EXTERNAL SOURCES:
+  IMCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IMCore: 17597a89e88b880a177dd7ba90240d09a54f9c6a
+
+PODFILE CHECKSUM: e29cae08f03a6228e0ac3e27fb6958e759f10120
+
+COCOAPODS: 1.10.0
