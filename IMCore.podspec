@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IMCore'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of IMCore.'
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,7 @@ TODO: Add long description of the pod here.
   s.xcconfig = {
       'ENABLE_BITCODE' => 'NO'
   }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.subspec 'Mars' do |ss|
       ss.vendored_frameworks = 'IMCore/Vendors/*.framework'
       #ss.source_files = 'NetProtocol/*.framework/Headers/**/*.h'
